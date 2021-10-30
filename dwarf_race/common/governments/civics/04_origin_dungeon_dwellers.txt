@@ -1,0 +1,29 @@
+origin_dungeon_dwellers = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_dungeon_dwellers.dds"
+	picture = GFX_origin_dungeon_dwellers
+	max_once_global = yes
+
+	playable = {
+		always = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	
+	modifier = {
+		pop_growth_speed = -0.1
+		category_materials_research_speed_mult = 0.05
+		category_industry_research_speed_mult = 0.05
+	}
+
+	description = "origin_dungeon_dwellers_effects"
+	flags = { custom_start_screen }
+
+	advanced_start = no
+}
